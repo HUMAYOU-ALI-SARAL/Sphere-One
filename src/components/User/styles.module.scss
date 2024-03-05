@@ -1,0 +1,74 @@
+.navbar {
+    background: rgba(48, 48, 48, 0.10);
+    backdrop-filter: blur(27.5px);
+
+    input {
+        left: 40px;
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        padding: 10px 15px;
+        font-style: normal;
+        width: 468px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .navbarLink {
+        color: #FFF;
+        font-family: Abel;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .dropdown {
+        border-radius: 0px 0px 35px 35px;
+        background: #262626;
+        position: absolute;
+        top: 47px;
+        width: 95%;
+        min-height: 240px;
+        border-top: 2px solid rgba(56, 56, 56, 0.00);
+        filter: drop-shadow(0px 4px 5.4px rgba(0, 0, 0, 0.40));
+
+        &::before {
+            content: "";
+            width: 70%;
+            left: 30px;
+            height: 1px;
+            display: block;
+            position: absolute;
+            top: -4px;
+            background: linear-gradient(90deg, #000 15.85%, #FF7F2A 51.65%, #000 85.4%);
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 20px;
+            display: block;
+            position: absolute;
+            top: -12px;
+        }
+    }
+
+}
+
+.profileBanner {
+    z-index: -1;
+
+    .profileLinear {
+        width: 237px;
+        height: 2px;
+        flex-shrink: 0;
+        background: linear-gradient(90deg, #000 15.85%, #FF7F2A 51.65%, #000 85.4%);
+    }
+}
+
+.profileContent {}
+
+.profileTabs {}
+
+.profileSidebar {}

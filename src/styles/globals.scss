@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$colorMainOrange: #cf6b29;
+
+:root {
+  --wcm-z-index: 9999 !important;
+}
+
+body {
+  font-family: "Inter";
+}
+
+.shadow {
+  filter: drop-shadow(0px 6px 60px $colorMainOrange);
+}
+
+.rounded-2 {
+  border-radius: 2px;
+}
+
+.auth-header {
+  height: 80px;
+}
+
+.auth-layout {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.carousel {
+  overflow: visible !important;
+
+  .control-dots {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center;
+    gap: 12px;
+    bottom: -30px !important;
+    z-index: 100;
+  }
+}
+
+.sphera-faq, .nft-info {
+  .faq-row {
+    border-bottom: unset !important;
+  }
+
+  .row-title {
+    border-bottom: 1px solid #3D3D3D !important;
+  }
+
+  .icon-wrapper {
+    position: relative !important;
+  }
+}
+
+.sphera-faq {
+  .row-title-text {
+    padding-left: 18px;
+    color: #FFF;
+    font-family: Abel;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 15px;
+  }
+}
+
+.nft-info{
+  .row-title-text {
+    padding-left: 20px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 15px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.recharts-text.recharts-cartesian-axis-tick-value {
+  fill: #ffffff;
+}
+
+.multi-select-input input {
+  box-shadow: none !important;
+}
+
+.react-tooltip {
+  background-color: #232323 !important;
+  border: 1px solid #3D3D3D !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+  font-size: 14px !important;
+}

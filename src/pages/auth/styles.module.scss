@@ -1,0 +1,117 @@
+.onboardPage {
+    background-position: 0px 0px, 14% 140px;
+    background-repeat: no-repeat, no-repeat;
+
+    .onboardContainer {
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr) repeat(7, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .leftSideColumn {
+        grid-column: span 5;
+        height: calc(100vh - 130px);
+        display: flex;
+        flex-direction: row;
+        z-index: 4;
+        font-weight: 300;
+        padding-top: 50px;
+
+        div {
+            max-width: 260px;
+        }
+
+    }
+
+    .rightSideColumn {
+        grid-column: span 7;
+        padding: 20px;
+        display: flex;
+        position: relative;
+
+        .onBoardSlide {
+            height: 67vh;
+            margin: auto;
+            color: #fff;
+
+            .stepsLine {
+                width: 100%;
+                height: 30px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+
+                div {
+                    width: 10%;
+                    height: 4px;
+                    border-radius: 10px;
+                }
+            }
+
+            .sliderCard {
+                border: 3px solid gray;
+                background-color: rgb(27, 27, 27);
+                border-radius: 10px;
+                box-shadow: rgb(255, 127, 42) 0px 0px 8px 1px;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+
+                .textArea {
+                    width: 90%;
+                    height: 62vh;
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-bottom: 40px;
+
+                    h1 {
+                        width: 80%;
+                        margin: auto;
+                        font-size: 34px;
+                        margin-bottom: 20px;
+                        text-shadow: 0 3px 2px #000000;
+                        line-height: 90%;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hederaLogo {
+    position: absolute;
+    bottom: -170px;
+}
+
+.walletsBtn {
+    width: 197px;
+    height: 41px;
+    background-color: #323232;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.walletsBtnWrapper {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 1fr);
+    gap: 16px;
+}
